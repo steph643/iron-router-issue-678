@@ -7,7 +7,7 @@ How to reproduce Iron Router issue #678
 **** Steps ****
 
 1. $ git clone https://github.com/steph643/iron-router-issue-678/
-2. Go to the iron-router-issue-678 folder and run meteor
+2. Go to folder iron-router-issue-678 and run meteor
 3. Launch the browser on http://localhost:3000/page1
 4. Click on 'Go to page2'
 5. Click on 'Go to page1'
