@@ -1,0 +1,13 @@
+
+<template name="page1">
+    <h1>Page 1</h1>
+    {{logCollection "In page 1, myCollection1Cursor = " myCollection1Cursor}}
+    <a href="/page2">Go to page 2</a>
+</template>
+
+
+<template name="page2">
+    <h1>Page 2</h1>
+    {{logCollection "In page 2, myCollection2Cursor = " myCollection2Cursor}}
+    <a href="/page1">Go to page 1</a>
+</template>
