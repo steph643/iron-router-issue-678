@@ -4,7 +4,7 @@ iron-router-issue-678
 How to reproduce Iron Router issue #678
 
 
-**** Steps ****
+<h4>Steps To Reproduce</h4>
 
 1. $ git clone https://github.com/steph643/iron-router-issue-678/
 2. Go to folder iron-router-issue-678 and run meteor
@@ -13,7 +13,7 @@ How to reproduce Iron Router issue #678
 5. Click on 'Go to page1'
 
 
-**** Program Output ****
+<h4>Program Output</h4>
 
 With untouched code, data is not ready (as expected):
 
