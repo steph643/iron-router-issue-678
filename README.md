@@ -17,23 +17,25 @@ How to reproduce Iron Router issue #678
 
 With untouched code, data is not ready (as expected):
 
+```
 In page 1, myCollection1Cursor = WARNING, NULL OR UNDEFINED!!!
 In page 1, myCollection1Cursor = 1,2,3
 In page 2, myCollection2Cursor = WARNING, NULL OR UNDEFINED!!!
 In page 2, myCollection2Cursor = 4,5,6
 In page 1, myCollection1Cursor = WARNING, NULL OR UNDEFINED!!!
 In page 1, myCollection1Cursor = 1,2,3 
-
+```
 After uncommenting the 2 'action' lines, data is ready (as expected):
-
+```
 In page 1, myCollection1Cursor = 1,2,3
 In page 2, myCollection2Cursor = 4,5,6
 In page 1, myCollection1Cursor = 1,2,3
-
+```
 After commenting back the 2 'action' lines and uncommenting the 2 'onBeforeAction' lines, unexpected behavior:
-
+```
 In page 1, myCollection1Cursor = 1,2,3
 In page 1, myCollection1Cursor = WARNING, NULL OR UNDEFINED!!!
 In page 2, myCollection2Cursor = 4,5,6
 In page 2, myCollection2Cursor = WARNING, NULL OR UNDEFINED!!!
 In page 1, myCollection1Cursor = 1,2,3 
+```
